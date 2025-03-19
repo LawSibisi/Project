@@ -10,7 +10,7 @@ const AdminDashboard = () => {
     const fetchAdminDashboard = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:8080/api/admin/dashboard", {
+        const response = await axios.get("https://project-9upg.onrender.com/api/admin/dashboard", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setMessage(response.data);
