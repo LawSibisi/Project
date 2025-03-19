@@ -36,7 +36,7 @@ const RegisterPage = () => {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.post(  "http://localhost:8080/api/auth/register",
+      const response = await axios.post(  "https://project-9upg.onrender.com/api/auth/register",
         formData,
         {
           headers: { 'Authorization': `Bearer ${token}` },
