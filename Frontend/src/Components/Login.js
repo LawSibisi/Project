@@ -26,7 +26,7 @@ const LoginPage = () => {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:8080/api/auth/login", credentials);
+      const response = await axios.post("https://project-9upg.onrender.com/api/auth/login", credentials);
         const { token, role } = response.data;
         console.log("Full Response:", response);
 
