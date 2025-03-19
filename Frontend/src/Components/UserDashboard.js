@@ -10,7 +10,7 @@ const UserDashboard = () => {
     const fetchUserDashboard = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("https://project-9upg.onrender.com/api/user/dashboard", {
+        const response = await axios.get("https://project-1-ewav.onrender.com/api/user/dashboard", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setMessage(response.data);
