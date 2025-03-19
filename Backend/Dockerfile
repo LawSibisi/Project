@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y maven
 
 RUN mvn clean package
 
-ENTRYPOINT ["java", "-jar", "/target/WeBuyBusiness-Sinethemba-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app/target/WeBuyBusinesses-0.0.1-SNAPSHOT.jar"]
 
 
 EXPOSE 8080
